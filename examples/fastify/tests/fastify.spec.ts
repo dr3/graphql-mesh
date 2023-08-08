@@ -28,6 +28,7 @@ describe('fastify', () => {
           {
             pet_by_petId(petId: "pet200") {
               name
+              characteristic
             }
           }
         `,
@@ -35,7 +36,7 @@ describe('fastify', () => {
     });
 
     const json = await response.json();
-    expect(json.data).toEqual({ pet_by_petId: { name: 'Bob' } });
+    expect(json).toEqual({ data: { pet_by_petId: { name: 'Bob', characteristic: ["FLUFFY"] } } });
   });
 
   it('should work too', async () => {
@@ -49,6 +50,7 @@ describe('fastify', () => {
           {
             pet_by_petId(petId: "pet500") {
               name
+              characteristic
             }
           }
         `,

@@ -31,6 +31,14 @@
   },
   "components": {
     "schemas": {
+      "Characteristic": {
+        "enum": [
+          "Fluffy",
+          "Soft",
+          "Evil"
+        ],
+        "type": "string"
+      },
       "Pet": {
         "required": ["name"],
         "type": "object",
@@ -38,6 +46,14 @@
           "name": {
             "type": "string",
             "example": "doggie"
+          },
+          "characteristic": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Characteristic"
+            },
+            "nullable": true,
+            "deprecated": true
           }
         }
       }
