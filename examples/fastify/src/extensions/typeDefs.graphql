@@ -1,0 +1,5 @@
+extend type Query {
+  v1_pet_by_petId_extended(
+    petId: String!
+  ): v1_Pet
+}

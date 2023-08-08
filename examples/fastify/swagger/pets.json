@@ -32,14 +32,62 @@
   "components": {
     "schemas": {
       "Pet": {
-        "required": ["name"],
         "type": "object",
         "properties": {
-          "name": {
-            "type": "string",
-            "example": "doggie"
+          "paymentOffers": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/Offer"
+                },
+                {
+                  "$ref": "#/components/schemas/FancyOffer"
+                }
+              ]
+            },
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
+      },
+      "Offer": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FancyOffer": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Offer"
+          }
+        ],
+        "properties": {
+          "issuers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Issuer"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Issuer": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       }
     }
   }
