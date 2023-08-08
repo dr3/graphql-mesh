@@ -9,7 +9,7 @@ upstream.route({
     const { petId } = request.params as { petId: string };
 
     if (petId === 'pet200') {
-      return reply.status(200).send({ name: 'Bob' });
+      return reply.status(200).send({ name: 'Bob', characteristic: ["Fluffy"] });
     }
 
     return reply.status(500).send({ error: `Error` });
