@@ -9,10 +9,8 @@ sources:
     transforms:
       - namingConvention:
           mode: bare
-          typeNames: pascalCase
           enumValues: upperCase
           fieldNames: camelCase
-          fieldArgumentNames: camelCase
 additionalTypeDefs:
   - './src/extensions/typeDefs.graphql'
 additionalResolvers:
