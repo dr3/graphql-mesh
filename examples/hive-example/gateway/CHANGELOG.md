@@ -1,5 +1,15 @@
 # gateway-example
 
+## 0.13.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @graphql-mesh/openapi@0.102.2
+  - @graphql-mesh/transform-hive@0.99.2
+  - @graphql-mesh/plugin-hive@0.99.2
+  - @graphql-mesh/cli@0.92.2
+
 ## 0.13.1
 
 ### Patch Changes

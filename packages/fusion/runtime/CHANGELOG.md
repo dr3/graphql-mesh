@@ -1,5 +1,42 @@
 # @graphql-mesh/fusion-runtime
 
+## 0.5.2
+
+### Patch Changes
+
+- [#7341](https://github.com/ardatan/graphql-mesh/pull/7341)
+  [`29dc043`](https://github.com/ardatan/graphql-mesh/commit/29dc043c1fd5d83b3a3f8a1c739957f3d723067a)
+  Thanks [@dr3](https://github.com/dr3)! - Fix the bug when field name is renamed together with the
+  argument
+
+- [#7294](https://github.com/ardatan/graphql-mesh/pull/7294)
+  [`345a814`](https://github.com/ardatan/graphql-mesh/commit/345a81490f5201f6ee2f378b1b9d83c5881c9730)
+  Thanks [@ardatan](https://github.com/ardatan)! - Ability to manipulate transport entry through
+  `transportEntries`.
+
+  For example, you can add extra headers to a subgraph
+
+  ```ts
+  transportEntries: {
+    products: {
+      // This adds extra headers to the subgraph configuration
+      headers: [
+        // This forwards `authorization` from the upstream to downstream
+        ['authorization', '{context.headers.authorization}'],
+        // Or some static value
+        ['x-extra', process.env.SOME_THING]
+      ]
+    }
+  }
+  ```
+
+- Updated dependencies
+  [[`345a814`](https://github.com/ardatan/graphql-mesh/commit/345a81490f5201f6ee2f378b1b9d83c5881c9730)]:
+  - @graphql-mesh/transport-common@0.4.2
+  - @graphql-mesh/runtime@0.100.2
+  - @graphql-mesh/utils@0.99.2
+  - @graphql-mesh/types@0.99.2
+
 ## 0.5.1
 
 ### Patch Changes

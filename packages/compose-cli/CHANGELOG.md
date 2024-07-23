@@ -1,5 +1,14 @@
 # @graphql-mesh/compose-cli
 
+## 0.6.1
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @graphql-mesh/utils@0.99.2
+  - @graphql-mesh/fusion-composition@0.1.2
+  - @graphql-mesh/types@0.99.2
+
 ## 0.6.0
 
 ### Minor Changes
