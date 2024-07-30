@@ -1,5 +1,13 @@
 # example-fastify
 
+## 0.10.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @graphql-mesh/graphql@0.99.2
+  - @graphql-mesh/cli@0.92.2
+
 ## 0.10.1
 
 ### Patch Changes

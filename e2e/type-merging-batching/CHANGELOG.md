@@ -1,5 +1,18 @@
 # @e2e/type-merging-batching
 
+## 0.1.1
+
+### Patch Changes
+
+- Updated dependencies
+  [[`cfe779a`](https://github.com/ardatan/graphql-mesh/commit/cfe779a55421ee1064c6778db760bdef8ffb2d3b),
+  [`29dc043`](https://github.com/ardatan/graphql-mesh/commit/29dc043c1fd5d83b3a3f8a1c739957f3d723067a),
+  [`bfaeffa`](https://github.com/ardatan/graphql-mesh/commit/bfaeffa9881f3bf7faac07ecc39667793f347b83),
+  [`345a814`](https://github.com/ardatan/graphql-mesh/commit/345a81490f5201f6ee2f378b1b9d83c5881c9730)]:
+  - @graphql-mesh/serve-cli@0.8.1
+  - @graphql-mesh/fusion-runtime@0.5.2
+  - @graphql-mesh/compose-cli@0.6.1
+
 ## 0.1.0
 
 ### Patch Changes
